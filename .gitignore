@@ -1,0 +1,5 @@
+env
+.env
+garbage
+.idea
+.DS_Store
