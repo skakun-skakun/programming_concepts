@@ -13,7 +13,7 @@ print(min(a))
 print(a[::-1])
 
 # Task 4
-print([i for i in a if i % 2 == 0])
+print([i for i in a if i % 2 == 1])
 
 # Task 5
 print((lambda lst,n: [i*n for i in lst])(a, int(input())))

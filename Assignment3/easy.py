@@ -24,7 +24,7 @@ print(sum((lambda lst, y: [i for i in lst if i % y == 0])(a, int(input()))))
 print([i**2 for i in a])
 
 # Task 6
-new_a_lol = [i for i in a if i > 0]
+new_a = [i for i in a if i > 0]; print(new_a)
 
 # Task 7
 print((lambda lst, pref: [i for i in b if i.startswith(pref)])(b, input()))
@@ -36,4 +36,4 @@ print((lambda lst, n: sum(a[:n]))(a, int(input())))
 print([i for i in b if i == i[::-1]])
 
 # Task 10
-print((lambda lst, n: [i % n == 0 for i in a])(a, int(input())))
+new_bool_a = (lambda lst, n: [i % n == 0 for i in a])(a, int(input())); print(new_bool_a)
