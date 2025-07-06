@@ -41,8 +41,10 @@ for row in df.iterrows():
 returns = []
 
 for trade in close_trades:
+    print(f'Open: {trade["open"]}; Close: {trade["close"]}; Stop loss: {trade["stoploss"]}; Trade type: {("Short", "Long")[bool(trade["open"] > trade["stoploss"])]}')
     returns.append((trade['stoploss'] - trade['close']) / (trade['stoploss'] - trade['open']) - 1)
 
+print()
 print(f"Total returns: {sum(returns)}\nAverage returns: {np.mean(returns)}")
 
 # print(df.head(20))
